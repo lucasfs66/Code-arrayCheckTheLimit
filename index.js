@@ -1,11 +1,15 @@
 function smallEnough(a, limit){
   
   
-    for
+    for(let i = 0; i < a.length; i++){
+        if (a[i] > limit) {
+            return false
+        }
+    }
     
     
     return true
   }
 
 
-  console.log(smallEnough([4, 5], 0))
+  console.log(smallEnough([0], 0))
